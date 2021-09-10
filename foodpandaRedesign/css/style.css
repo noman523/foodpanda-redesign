@@ -1,0 +1,255 @@
+/*
+  Theme Name: Foodpanda redesign
+  Author: Abdullah AL Noman
+  Description: Foodpanda - Order your favourite food.
+  Version: none
+*/
+
+
+/*-------------------------------------
+
+Table of contents
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+/* css variables */
+
+:root {
+    --color-primary-text: #1C3F55;
+    --color-brand: #D70F64;
+    --color-brand-dark: #bd0451;
+    --color-brand-light: #FEDEE3;
+    --color-blue: #031888;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #333333;
+    --color-gray-2: #e9ecff;
+}
+
+
+/* General style */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* color: var(--color-secondary) !important; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    letter-spacing: -.00278rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--color-gray);
+}
+
+
+
+
+
+/* bg */
+
+.bg-primary {
+    background: var(--color-primary) !important;
+}
+
+.bg-white {
+    background: var(--color-white) !important;
+}
+
+.bg-gray {
+    background: var(--color-gray-2) !important;
+}
+
+
+/* font weight*/
+
+.font-weight-light {
+    font-weight: 300 !important;
+}
+
+.font-weight-regular {
+    font-weight: 400 !important;
+}
+
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+
+.smallsize{
+    font-size: 13px;
+}
+
+
+/* text color */
+
+.t-color-brand {
+    color: var(--color-brand) !important;
+}
+
+.t-color-primary {
+    color: var(--color-primary-text) !important;
+}
+
+.btn-theme{
+    background-color: var(--color-brand);
+    color: white;
+}
+
+.btn-theme.btn-theme:hover{
+    background-color: var(--color-brand-dark);
+    color: white;
+}
+
+/* nav */
+
+navbar
+.navbar-nav{
+    display: flex;
+    flex: auto;
+}
+.nav-item .nav-link{
+    color: var(--color-primary-text);
+}
+
+.navbar-toggler{
+    color: var(--color-brand);
+}
+/* nav */
+
+/* alert start */
+.alert-brand {
+    color: var(--color-brand);
+    background-color: var(--color-brand-light);
+    border-color: #f5c6cb;
+}
+
+.alert {
+    position: relative;
+    padding: .3rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0rem;
+}
+
+/* alert end */
+
+
+
+
+
+
+/* banner start*/
+#banner-part{
+    background: url(../img/Heroimage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-text{
+    margin-top: 96px;
+    margin-bottom: 180px;
+}
+
+
+.banner-text h1{
+    margin-bottom: 10px;
+}
+.banner-text form{
+    margin-top: 10px;
+}
+
+#suggestion-content{
+    padding: 15px;
+    background-color: #FFF9FA;
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+}
+
+#noman{
+    flex-flow: inherit;
+}
+
+
+#suggestion-item{
+   text-align: center;
+    width: 94px;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid transparent;
+    padding: 5px;
+}
+#suggestion-item:hover{
+    border: 1px solid var(--color-gray-2);
+    cursor: pointer;
+}
+
+#suggestion-item p{
+    text-align: center;
+    margin-bottom: 14px;
+    line-height: 16px;
+    color: var(--color-primary-text);
+}
+
+#suggestion-item:hover p {
+    font-weight: bold;
+    color: var(--color-brand);
+ 
+}
+
+
+/* banner end */
